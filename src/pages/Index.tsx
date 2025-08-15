@@ -44,13 +44,7 @@ const Index = () => {
             Узнать об авторе
           </Button>
         </div>
-        <div className="mx-auto max-w-4xl">
-          <img 
-            src="/img/cc72026b-bd64-45a4-989c-15860a82de99.jpg" 
-            alt="Wellness and balance lifestyle"
-            className="w-full h-96 object-cover rounded-3xl shadow-2xl hover-scale"
-          />
-        </div>
+
       </section>
 
       {/* About Author */}
