@@ -11,37 +11,37 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/30">
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-primary">Состояние</div>
+        <div className="text-2xl font-bold text-primary">Антон Щукарев</div>
         <div className="hidden md:flex space-x-8">
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">О клубе</a>
+          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">Об авторе</a>
           <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">Как работает</a>
           <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Отзывы</a>
           <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
         </div>
-        <Button>Войти</Button>
+        <Button>Присоединиться</Button>
       </nav>
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center animate-fade-in">
-        <Badge className="mb-6" variant="secondary">Закрытый клуб</Badge>
+        <Badge className="mb-6" variant="secondary">Личный клуб Антона Щукарева</Badge>
         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-          Проверенные способы<br />управления своим<br />состоянием
+          Проверенные способы<br />управления состоянием<br />от человека, который<br />дважды терял всё
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-4xl mx-auto leading-relaxed">
-          за 3000 рублей в месяц
+          и каждый раз поднимался с нуля
         </p>
         <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Ежемесячная подписка на закрытый клуб, где каждый получает инструменты для поддержания 
-          финансового, психологического, морального и физического состояния.
+          Опыт преодоления кризисов, закрытия долгов в десятки миллионов и построения устойчивого состояния 
+          во всех сферах жизни. За 3000 рублей в месяц.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Button size="lg" className="text-lg px-8 py-6 hover-scale">
             <Icon name="ArrowRight" size={20} className="ml-2" />
-            Присоединиться сейчас
+            Присоединиться к клубу
           </Button>
           <Button size="lg" variant="outline" className="text-lg px-8 py-6 hover-scale">
-            <Icon name="Play" size={20} className="mr-2" />
-            Узнать больше
+            <Icon name="User" size={20} className="mr-2" />
+            Узнать об авторе
           </Button>
         </div>
         <div className="mx-auto max-w-4xl">
@@ -53,12 +53,60 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Author */}
+      <section id="about" className="bg-secondary/50 py-20">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <img 
+                src="/img/6dd37f2b-de08-4445-ad3c-2710c3717215.jpg" 
+                alt="Антон Щукарев"
+                className="w-full max-w-md mx-auto rounded-3xl shadow-2xl hover-scale"
+              />
+            </div>
+            <div>
+              <Badge className="mb-6" variant="outline">Об авторе</Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">Антон Щукарев</h2>
+              <div className="space-y-6 text-lg text-muted-foreground">
+                <p>
+                  За последние 10 лет <strong className="text-foreground">дважды терял бизнес</strong>, 
+                  оставаясь должен десятки миллионов рублей.
+                </p>
+                <p>
+                  <strong className="text-foreground">Не сдался.</strong> Закрыл свои обязательства. 
+                  Много раз терял всё в жизни и начинал заново.
+                </p>
+                <p>
+                  Сегодня делится опытом управления состоянием в кризисные моменты — 
+                  финансовым, психологическим, моральным и физическим.
+                </p>
+                <div className="pt-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Icon name="Users" size={20} className="text-primary" />
+                    <span>Женат, строит крепкую семью</span>
+                  </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Icon name="TrendingUp" size={20} className="text-primary" />
+                    <span>Превратил кризисы в ступени роста</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Shield" size={20} className="text-primary" />
+                    <span>Знает цену каждого решения</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section id="how-it-works" className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Как работает клуб "Состояние"</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Что вы получаете в клубе</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Получайте еженедельный контент и инструменты для поддержания баланса во всех сферах жизни
+            Проверенные на личном опыте инструменты управления состоянием от человека, 
+            который прошёл через серьёзные кризисы
           </p>
         </div>
         
@@ -68,11 +116,11 @@ const Index = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Icon name="BookOpen" size={32} className="text-primary" />
               </div>
-              <CardTitle className="text-xl">Еженедельный контент</CardTitle>
+              <CardTitle className="text-xl">Личный опыт</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-center">
-                Статьи, видео, подкасты, которые помогают сохранять баланс и развиваться
+                Реальные истории преодоления кризисов и конкретные инструменты, которые работают
               </CardDescription>
             </CardContent>
           </Card>
@@ -82,11 +130,11 @@ const Index = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Icon name="Heart" size={32} className="text-primary" />
               </div>
-              <CardTitle className="text-xl">Практики и медитации</CardTitle>
+              <CardTitle className="text-xl">Антикризисные практики</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-center">
-                Техники для улучшения эмоционального и физического состояния
+                Методы поддержания психологического равновесия в сложные периоды
               </CardDescription>
             </CardContent>
           </Card>
@@ -96,11 +144,11 @@ const Index = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Icon name="Users" size={32} className="text-primary" />
               </div>
-              <CardTitle className="text-xl">Поддержка специалистов</CardTitle>
+              <CardTitle className="text-xl">Проверенные специалисты</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-center">
-                Контакты эндокринологов, психотерапевтов и других экспертов
+                Контакты врачей и экспертов, которые помогали в трудные времена
               </CardDescription>
             </CardContent>
           </Card>
@@ -110,11 +158,11 @@ const Index = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Icon name="TrendingUp" size={32} className="text-primary" />
               </div>
-              <CardTitle className="text-xl">Философия роста</CardTitle>
+              <CardTitle className="text-xl">Кризис как возможность</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-center">
-                Как кризисы могут стать ступенями к личностному росту
+                Философия превращения падений в точки роста и новые возможности
               </CardDescription>
             </CardContent>
           </Card>
@@ -138,10 +186,10 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="text-lg mb-4">
-                        "В этом клубе я нашёл ответы на вопросы, которые беспокоили меня годами. 
-                        Контент действительно работающий и применимый в жизни."
+                        "Когда мой бизнес развалился, опыт Антона помог не сломаться. 
+                        Здесь говорят о кризисах как о возможностях, а не как о конце света."
                       </p>
-                      <div className="text-sm text-muted-foreground">— Алексей М., участник 8 месяцев</div>
+                      <div className="text-sm text-muted-foreground">— Алексей М., предприниматель</div>
                     </div>
                   </div>
                 </CardContent>
@@ -155,10 +203,10 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="text-lg mb-4">
-                        "Благодаря практикам и рекомендациям я чувствую себя более уверенно и спокойно. 
-                        Изменения заметны уже через месяц."
+                        "После развода была на дне. Опыт Антона с преодолением личных кризисов 
+                        показал, что можно начать заново. И сделать это красиво."
                       </p>
-                      <div className="text-sm text-muted-foreground">— Мария К., участник 4 месяца</div>
+                      <div className="text-sm text-muted-foreground">— Мария К., мама двоих детей</div>
                     </div>
                   </div>
                 </CardContent>
@@ -173,29 +221,29 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-6">
                 <Card className="text-center hover-scale">
                   <CardContent className="p-6">
-                    <div className="text-4xl font-bold text-primary mb-2">80%</div>
-                    <div className="text-sm text-muted-foreground">участников отмечают улучшение психоэмоционального состояния</div>
+                    <div className="text-4xl font-bold text-primary mb-2">92%</div>
+                    <div className="text-sm text-muted-foreground">членов клуба сообщают о повышении устойчивости к стрессу</div>
                   </CardContent>
                 </Card>
                 
                 <Card className="text-center hover-scale">
                   <CardContent className="p-6">
-                    <div className="text-4xl font-bold text-primary mb-2">2 мес</div>
-                    <div className="text-sm text-muted-foreground">средний срок для значительного улучшения самочувствия</div>
+                    <div className="text-4xl font-bold text-primary mb-2">10 лет</div>
+                    <div className="text-sm text-muted-foreground">личного опыта преодоления кризисов и восстановления</div>
                   </CardContent>
                 </Card>
                 
                 <Card className="text-center hover-scale">
                   <CardContent className="p-6">
-                    <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                    <div className="text-sm text-muted-foreground">активных участников клуба</div>
+                    <div className="text-4xl font-bold text-primary mb-2">десятки</div>
+                    <div className="text-sm text-muted-foreground">миллионов долгов закрыто честно</div>
                   </CardContent>
                 </Card>
                 
                 <Card className="text-center hover-scale">
                   <CardContent className="p-6">
-                    <div className="text-4xl font-bold text-primary mb-2">95%</div>
-                    <div className="text-sm text-muted-foreground">продлевают подписку после первого месяца</div>
+                    <div className="text-4xl font-bold text-primary mb-2">2 раза</div>
+                    <div className="text-sm text-muted-foreground">терял бизнес и поднимался снова</div>
                   </CardContent>
                 </Card>
               </div>
@@ -206,17 +254,17 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">Готовы изменить своё состояние?</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">Готовы начать заново?</h2>
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Присоединяйтесь к сообществу людей, которые инвестируют в своё развитие и благополучие
+          Присоединяйтесь к людям, которые знают: кризис — это не конец, а новое начало
         </p>
         <div className="bg-gradient-to-r from-primary to-primary/80 rounded-3xl p-12 max-w-2xl mx-auto hover-scale">
           <div className="text-white">
             <div className="text-6xl font-bold mb-4">3000 ₽</div>
             <div className="text-xl mb-8">в месяц</div>
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6 hover-scale">
-              <Icon name="CreditCard" size={20} className="mr-2" />
-              Получить доступ сейчас
+              <Icon name="Users" size={20} className="mr-2" />
+              Присоединиться к клубу
             </Button>
             <p className="text-sm mt-4 opacity-90">Первый месяц можно отменить без объяснений</p>
           </div>
@@ -324,19 +372,19 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold mb-4">Состояние</div>
+              <div className="text-2xl font-bold mb-4">Антон Щукарев</div>
               <p className="text-background/70">
-                Инвестируйте в своё развитие и благополучие вместе с нами.
+                Личный клуб для тех, кто готов превратить кризис в возможность.
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Клуб</h4>
+              <h4 className="font-semibold mb-4">О клубе</h4>
               <div className="space-y-2 text-background/70">
-                <div>О проекте</div>
-                <div>Как работает</div>
-                <div>Преподаватели</div>
-                <div>Отзывы</div>
+                <div>Об авторе</div>
+                <div>Моя история</div>
+                <div>Принципы работы</div>
+                <div>Отзывы участников</div>
               </div>
             </div>
             
