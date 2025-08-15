@@ -286,69 +286,36 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <Card className="hover-scale">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3">
-                <Icon name="MessageCircle" size={24} className="text-primary" />
-                Напишите нам
-              </CardTitle>
-              <CardDescription>Ответим в течение нескольких часов</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <Input placeholder="Ваше имя" />
-              <Input type="email" placeholder="Email" />
-              <Textarea placeholder="Сообщение" className="h-32" />
-              <Button className="w-full hover-scale">
-                <Icon name="Send" size={20} className="mr-2" />
-                Отправить
-              </Button>
+            <CardContent className="p-8 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Icon name="Mail" size={32} className="text-primary" />
+              </div>
+              <div className="font-semibold text-lg mb-2">Email</div>
+              <div className="text-muted-foreground">hello@состояние.рф</div>
             </CardContent>
           </Card>
 
-          <div className="space-y-8">
-            <Card className="hover-scale">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Icon name="Mail" size={24} className="text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">hello@состояние.рф</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <Card className="hover-scale">
+            <CardContent className="p-8 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Icon name="MessageSquare" size={32} className="text-primary" />
+              </div>
+              <div className="font-semibold text-lg mb-2">Telegram</div>
+              <div className="text-muted-foreground">@состояние_клуб</div>
+            </CardContent>
+          </Card>
 
-            <Card className="hover-scale">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Icon name="MessageSquare" size={24} className="text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Telegram</div>
-                    <div className="text-muted-foreground">@состояние_клуб</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-scale">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Icon name="Clock" size={24} className="text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Время работы</div>
-                    <div className="text-muted-foreground">Пн-Пт: 10:00-19:00 МСК</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          <Card className="hover-scale">
+            <CardContent className="p-8 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Icon name="Clock" size={32} className="text-primary" />
+              </div>
+              <div className="font-semibold text-lg mb-2">Время работы</div>
+              <div className="text-muted-foreground">Пн-Пт: 10:00-19:00 МСК</div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
