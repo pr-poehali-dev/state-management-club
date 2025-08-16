@@ -42,6 +42,15 @@ const Index = () => {
             Узнать подробнее
           </Button>
         </div>
+        
+        {/* Hero Image */}
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/img/08712e69-720c-46fd-8a07-5b59ef735a63.jpg" 
+            alt="Состояние гармонии и внутреннего спокойствия" 
+            className="max-w-2xl w-full h-auto rounded-3xl shadow-lg hover-scale"
+          />
+        </div>
       </section>
 
       {/* About Author */}
@@ -91,12 +100,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Как работает клуб */}
+      {/* Как это работает */}
       <section id="how-it-works" className="bg-secondary/5 py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             Как работает клуб "Состояние"
           </h2>
+          <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
+            Краткое описание того, что пользователи получат с подпиской:
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center hover-scale">
               <CardContent className="p-6">
@@ -139,7 +151,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="TrendingUp" size={24} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Философия роста</h3>
+                <h3 className="text-xl font-semibold mb-3">Философия жизни и привычки</h3>
                 <p className="text-muted-foreground">
                   Как кризисы могут стать ступенями к личностному росту
                 </p>
@@ -165,10 +177,9 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-lg mb-4">
-                      "В этом клубе я нашёл ответы на вопросы, которые беспокоили меня годами. 
-                      Контент действительно работающий и применимый в жизни."
+                      "В этом клубе я нашёл ответы на вопросы, которые беспокоили меня годами."
                     </p>
-                    <div className="text-sm text-muted-foreground">— Алексей М., участник 8 месяцев</div>
+                    <div className="text-sm text-muted-foreground">— Алексей М., участник клуба</div>
                   </div>
                 </div>
               </CardContent>
@@ -182,66 +193,83 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-lg mb-4">
-                      "Благодаря практикам и рекомендациям я чувствую себя более уверенно и спокойно. 
-                      Изменения заметны уже через месяц."
+                      "Благодаря практикам и рекомендациям я чувствую себя более уверенно и спокойно."
                     </p>
-                    <div className="text-sm text-muted-foreground">— Мария К., участник 4 месяца</div>
+                    <div className="text-sm text-muted-foreground">— Мария К., участник клуба</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
           
-          {/* Цифры и факты */}
+          {/* Кейсы */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold mb-8 text-center">Истории изменений</h3>
+            <div className="space-y-6">
+              <Card className="hover-scale">
+                <CardContent className="p-6">
+                  <p className="text-muted-foreground">
+                    Показывающие реальные изменения, которые произошли с пользователями после участия в клубе.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          
+          {/* Кейсы */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold mb-8 text-center">Истории изменений</h3>
+            <div className="space-y-6">
+              <Card className="hover-scale">
+                <CardContent className="p-6">
+                  <p className="text-muted-foreground">
+                    Показывающие реальные изменения, которые произошли с пользователями после участия в клубе.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          
+          {/* Доказательства эффективности */}
           <div className="bg-primary text-background rounded-3xl p-12">
             <h3 className="text-3xl font-bold mb-8 text-center">Что говорят цифры</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">80%</div>
-                <div className="text-background/80">
+                <div className="text-5xl font-bold mb-2">80%+</div>
+                <div className="text-background/80 text-lg">
                   участников отмечают улучшение психоэмоционального состояния
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">2 мес</div>
-                <div className="text-background/80">
-                  средний срок для значительного улучшения самочувствия
+                <div className="text-5xl font-bold mb-2">2 мес</div>
+                <div className="text-background/80 text-lg">
+                  в среднем через 2 месяца пользователи сообщают о значительном улучшении общего самочувствия
                 </div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold mb-2">500+</div>
-                <div className="text-background/80">
-                  активных участников клуба
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold mb-2">95%</div>
-                <div className="text-background/80">
-                  продлевают подписку после первого месяца
-                </div>
-              </div>
+            </div>
+            <div className="text-center">
+              <p className="text-background/90 text-lg">
+                Используйте иконки, такие как процентные знаки, диаграммы и звезды, чтобы визуально подкрепить факты.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Призыв к действию */}
       <section className="py-20 px-4 bg-gradient-to-br from-secondary/10 to-primary/10">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Готовы изменить своё состояние?
           </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Присоединяйтесь к сообществу людей, которые инвестируют в своё развитие и благополучие
-          </p>
           <div className="flex flex-col items-center gap-6">
-            <Button size="lg" className="text-lg px-8 py-6 hover-scale">
+            <Button size="lg" className="text-lg px-8 py-6 hover-scale bg-primary text-background">
               <Icon name="CreditCard" size={20} className="mr-2" />
-              Получить доступ сейчас за 3000₽ в месяц
+              Получить доступ сейчас за 3000 рублей в месяц
             </Button>
-            <div className="text-sm text-muted-foreground">
-              Отменить можно в любой момент
-            </div>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              Прямой призыв оставить заявку. Убедитесь, что кнопка выделяется и визуально привлекательна.
+            </p>
           </div>
         </div>
       </section>
